@@ -162,9 +162,15 @@ with st.sidebar:
     )
     st.divider()
     st.markdown("**About**")
+    # data source notice with hyperlink
+    st.markdown("📂 Domain threat data sourced from the "
+    "[Cybersecurity Attacks & Defense Dataset 2026](https://www.kaggle.com/datasets/chuneeb/ai-cybersecurity-threat-dataset-2026) "
+    "on Kaggle. Domain checker uses real vote data when available, "
+    "structural analysis only for unknown domains.")
+
     st.markdown("Built with Python, scikit-learn, and NVIDIA Llama 3.1")
     st.markdown("Dataset: Cybersecurity Threat Intel 2026")
-    st.markdown("[View on GitHub](https://github.com)")
+    st.markdown("[View on GitHub](https://github.com/Nathan-sudo-pycharm/secureintel-dns-guardian)")
 
 # ---- METRICS ROW ----
 existing_metrics = load_metrics()
