@@ -22,10 +22,8 @@ import time
 
 # ---- SETUP ----
 # load our .env file so we can access NVIDIA_API_KEY
-load_dotenv()
-
-# get our NVIDIA API key from environment variables
-NVIDIA_API_KEY = os.getenv('NVIDIA_API_KEY')
+from app.config import get_nvidia_key
+NVIDIA_API_KEY = get_nvidia_key()
 
 # initialize the client pointed at NVIDIA's servers
 # base_url tells the OpenAI library to talk to NVIDIA instead of OpenAI
