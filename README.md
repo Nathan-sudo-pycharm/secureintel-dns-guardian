@@ -2,7 +2,7 @@
 
 > An open-source network anomaly detection system that watches your traffic, spots suspicious behaviour, and explains it in plain English.
 
-🌐 **Live Demo:** [Click here to try it](https://your-streamlit-url-here.streamlit.app)
+🌐 **Live Demo:** [SecureIntel - DNS Gaurdian](https://secureintel-dns-guardian-hnmrvawde2yq3abu6fekxn.streamlit.app/)
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
