@@ -53,7 +53,9 @@ def run_pipeline(max_explanations=5):
     
     # scale features so all numbers are on the same range
     # scaler is saved so we can use it later on new data
-    domains_scaled, scaler = scale_features(domains_df)
+    # drop Domain column before scaling — it's a string not a number
+    domains_df_features = domains_df.drop(columns=['Domain'])
+    domains_scaled, scaler = scale_features(domains_df_features)
     
     print(f"      Loaded {len(domains_df)} domain records")
     
